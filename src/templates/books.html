@@ -1,0 +1,23 @@
+<h1 class="pt-5 pb-2">List of Socks</h1>
+
+<p class="lead alert alert-warning">This is a list of all the socks of the
+      <strong>{{ style }}</strong> style in our inventory.</p>
+
+  <table class="table">
+      <tr>
+          <th>Sock Name</th>
+          <th>Color</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Updated</th>
+      </tr>
+
+      {% for book in books %}
+      <tr>
+          <td>{{ book.Title }}</td>
+          <td>{{ book.Author }}</td>
+          <td>{{ book.Release_Year }}</td>
+          <td>{{ book.Genre }}</td>
+      </tr>
+      {% endfor %}
+  </table>
