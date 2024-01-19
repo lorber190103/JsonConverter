@@ -59,3 +59,4 @@ Titel, Autor, Veröffentlichungsjahr, Genre
 Diese Übung ermöglicht es dir, Erfahrung im Umgang mit semistrukturierten und streng strukturierten Datenformaten zu sammeln, sowie in der Verarbeitung von Daten und der Umwandlung zwischen verschiedenen Formaten. Du könntest verschiedene Programmiersprachen wie Python, JavaScript oder eine andere Sprache deiner Wahl verwenden, um diese Aufgabe zu lösen.
 
 
+Erstellen Sie ein kleines Webwerkzeug, welches das aus INSY bekannte Booklist Format. (JSON nicht das CSV Format) einlesen kann und die Daten persistiert. (Als Bonus verwenden Sie nicht SQLite). Das Web-Gui soll in weiterer Folge die Bücher als Kacheln darstellen. Relativ groß soll der Titel links oben in jeder Kachel dargestellt werden. Klein und rechts unten die Autorin oder der Autor. (Als Bonus eine zufällige, aber harmonierende Hintergrundfarbe pro Kachel)
