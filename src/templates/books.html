@@ -14,9 +14,8 @@
 
         .book-tile {
             width: 200px;
-            height: 150px;
-            border: 1px solid #ddd;
-            margin: 10px;
+            height: 175px;
+            margin: 15px;
             padding: 10px;
             display: flex;
             flex-direction: column;
@@ -28,6 +27,10 @@
             font-size: 1.5em;
             text-align: left;
         }
+        .author {
+            font-size: 0.75em;
+            text-align: right;
+        }
     </style>
 </head>
 
@@ -35,9 +38,9 @@
     {% for book in books %}
     <div class="book-tile">
         <div class="title">{{ book.title }}</div>
-        <div>{{ book.author }}</div>
         <div>{{ book.release_year }}</div>
         <div>{{ book.genre }}</div>
+        <div class="author">{{ book.author }}</div>
     </div>
     {% endfor %}
 </body>

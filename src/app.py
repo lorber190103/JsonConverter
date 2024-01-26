@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 
-from src.main import DatabaseInserter
+from src.main import DatabaseInserter, JsonConverter
 from src.model import Books, db
 
 app = Flask(__name__)
@@ -15,6 +15,10 @@ with app.app_context():
 
 @app.route("/")
 def user_list():
+    converter = JsonConverter()
+    converter.read_csv()
+    converter.make_json()
+
     inserter = DatabaseInserter()
     inserter.insert()
 

@@ -4,3 +4,4 @@ orm
 src
 Inserter
 autoincrement
+skipinitialspace
