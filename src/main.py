@@ -11,7 +11,6 @@ class JsonConverter:
     def read_csv(self):
         with open("src/data/input.csv", encoding='utf-8') as csv_file:
             csvReader = csv.DictReader(csv_file, skipinitialspace=True)
-
             for rows in csvReader:
                 self.data["Buch"].append(rows)
 
