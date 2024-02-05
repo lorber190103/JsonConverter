@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <style>
         body {
@@ -8,7 +7,7 @@
             flex-wrap: wrap;
             justify-content: space-evenly;
             padding: 20px;
-            background-color: #CCCCCC
+            background-color: #CCCCCC;
         }
         .book-tile {
             width: 200px;
@@ -31,7 +30,6 @@
         }
     </style>
 </head>
-
 <body>
     {% for book in books %}
     <div class="book-tile">
@@ -41,6 +39,15 @@
         <div class="author">{{ book.author }}</div>
     </div>
     {% endfor %}
-</body>
 
+    <script>
+        var bodyRandomColor = Math.floor(Math.random() * 16777215).toString(16);
+        var tileRandomColor = Math.floor(Math.random() * 16777215).toString(16);
+        document.body.style.backgroundColor = '#' + bodyRandomColor;
+        var bookTiles = document.querySelectorAll('.book-tile');
+        bookTiles.forEach(function(tile) {
+            tile.style.backgroundColor = '#' + tileRandomColor;
+        });
+    </script>
+</body>
 </html>
